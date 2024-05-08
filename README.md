@@ -74,13 +74,10 @@ The following list of routes are included:</br>
 <h2>To Be Edited</h2>
 <h4>In controllers/tasks.js:</h4> </br></br>
 
-GET/Items/new/ allows sellers to add a new Item</br>
-GET/Items/:id/ allows users to see the products(show page)</br>
-POST/Items/ allows sellers to add their item</br>
-GET/Items/:id/edit/ allows sellers to edit items</br>
-PUT/Items/:id/ allows sellers to update items</br>
-PUT/Items/:id/buy allows sellers to buy items</br>
-DELETE/Items/:id allows sellers to delete items</br>
+GET/Tasks allows users to see the main project board with all tasks.</br>
+POST/Tasks allows users to add a task to the project board.</br>
+PUT/Tasks/:id allows users to update the specific task's details</br>
+DELETE/Tasks/:id allows users to delete tasks</br>
 
 
 <h4>In controllers/users.js:</h4> </br></br>

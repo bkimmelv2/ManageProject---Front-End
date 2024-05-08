@@ -11,7 +11,7 @@ The manageProject app has two repositories:
 Users will need to signup and login if they need to access the app.
 
 
- <h2> ManageProject---Front-End </h2>
+ <h2> ManageProject---Front-End </h2></br>
  <h3>Wireframes</h3>
  - Please see the wireframe for the Create Account/Login page below: </br></br>
  

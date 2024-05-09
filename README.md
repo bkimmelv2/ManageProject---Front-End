@@ -69,7 +69,8 @@ const taskSchema = new mongoose.Schema({</br>
 <h3>ROUTES:</h3>
 The following list of routes are included:</br>
 
-![image](https://github.com/davedawita/ManageProject---Front-End/assets/155693018/66416fb2-450d-4b3d-83fd-29fb2a18d358)
+![image](https://github.com/davedawita/ManageProject---Front-End/assets/155693018/a6f4d551-7991-48c1-8436-1f5016d8814d)
+
 
 <h2>To Be Edited</h2>
 <h4>In controllers/tasks.js:</h4> </br></br>

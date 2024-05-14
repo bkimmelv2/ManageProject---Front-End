@@ -45,6 +45,11 @@ const Index = (props) => {
 
   return (
     <section>
+
+      <h1>Tasks</h1>
+      {props.tasks ? loaded() : loading()}
+      <br/>
+
       <h2>Create a New Task</h2>
         <form onSubmit={handleSubmit}>
           <input
@@ -83,12 +88,8 @@ const Index = (props) => {
             onChange={handleChange}
           /> <p>Required ('To Do', 'Doing', 'Done')</p>
           <input type ='Submit' value='Create Task' />
-        </form>
+        </form> <br/>
 
-        <br/><br/>
-
-      <h1>Tasks</h1>
-      {props.tasks ? loaded() : loading()}
     </section>
   )
 }

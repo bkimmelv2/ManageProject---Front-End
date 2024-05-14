@@ -36,7 +36,7 @@ const Main = (props) => {
     <main>
       <Routes>
         <Route path='/' element={<Index tasks={tasks} createTasks={createTasks} />}/>
-        <Route path='/tasks/:id' element={<></>}/>
+        <Route path='/tasks/:id' element={<Show/>}/>
       </Routes>
     </main>
   )

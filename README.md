@@ -15,7 +15,7 @@ Users will need to signup and login if they need to access the app.
  <h3>Wireframes</h3>
  - Please see the wireframe for the Create Account/Login page below: </br></br>
  
-![image](https://github.com/davedawita/ManageProject---Front-End/assets/155693018/874cc448-3ccc-4ac3-a9af-6221e8b9175a)
+![image](https://github.com/davedawita/ManageProject---Front-End/assets/155693018/b1cc27bc-ba76-41fa-a617-4926c2f96765)
 
 
 
@@ -69,18 +69,16 @@ const taskSchema = new mongoose.Schema({</br>
 <h3>ROUTES:</h3>
 The following list of routes are included:</br>
 
-![image](https://github.com/davedawita/ManageProject---Front-End/assets/155693018/66416fb2-450d-4b3d-83fd-29fb2a18d358)
+![image](https://github.com/davedawita/ManageProject---Front-End/assets/155693018/a6f4d551-7991-48c1-8436-1f5016d8814d)
+
 
 <h2>To Be Edited</h2>
 <h4>In controllers/tasks.js:</h4> </br></br>
 
-GET/Items/new/ allows sellers to add a new Item</br>
-GET/Items/:id/ allows users to see the products(show page)</br>
-POST/Items/ allows sellers to add their item</br>
-GET/Items/:id/edit/ allows sellers to edit items</br>
-PUT/Items/:id/ allows sellers to update items</br>
-PUT/Items/:id/buy allows sellers to buy items</br>
-DELETE/Items/:id allows sellers to delete items</br>
+GET/Tasks allows users to see the main project board with all tasks.</br>
+POST/Tasks allows users to add a task to the project board.</br>
+PUT/Tasks/:id allows users to update the specific task's details</br>
+DELETE/Tasks/:id allows users to delete tasks</br>
 
 
 <h4>In controllers/users.js:</h4> </br></br>

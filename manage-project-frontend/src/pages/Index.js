@@ -27,7 +27,7 @@ const Index = (props) => {
     return props.tasks.map((task) => {
       return (
         <div>
-          <Link to={`tasks/{task._id}`}>
+          <Link to={`/tasks/${task._id}`}>
             <h1>{task.title}</h1>
           </Link>
             <h2>{task.description}</h2>

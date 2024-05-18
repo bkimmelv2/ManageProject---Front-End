@@ -6,6 +6,7 @@ const Header = (props) => {
       <Link to='/'>
         <h1>Manage Project App</h1>
       </Link>
+      <h2>User--TBD & Login/Logout</h2>
     </div>
   )
 }

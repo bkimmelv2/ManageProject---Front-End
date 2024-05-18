@@ -8,16 +8,16 @@ const URL = "http://localhost:4000"
 const Main = (props) => {
   const [tasks, setTasks] = useState(null)
 
-  //get tasks from backend
+  // get tasks from backend
   const getTasks = async () => {
     const response = await fetch(URL + '/tasks')
     const data = await response.json()
     setTasks(data)
   }
 
-  //create tasks
+  // create tasks
   const createTasks = async (task) => {
-    const response = await fetch(URL + '/tasks', {
+    const response = await fetch(URL + '/tasks' , {
       method: "post",
       headers: {
         "Content-Type": "application/json"
@@ -28,9 +28,9 @@ const Main = (props) => {
     setTasks((prev) => [...prev, createdTask])
   }
 
-  //update tasks
+  // update tasks
   const updateTasks = async (task, id) => {
-    await fetch(URL + `/tasks/${id}`, {
+    await fetch(URL + `/tasks/${id}` , {
       method: "put",
       headers: {
         "Content-Type": "application/json"
@@ -40,9 +40,9 @@ const Main = (props) => {
     getTasks()
   }
 
-  //delete tasks
-  const deleteTasks = async (task, id) => {
-    await fetch(URL + `/tasks/${id}`, {
+  // delete tasks
+  const deleteTasks = async (id) => {
+    await fetch(URL + `/tasks/${id}` , {
       method: "delete",
     })
     getTasks()
@@ -56,7 +56,16 @@ const Main = (props) => {
     <main>
       <Routes>
         <Route path='/' element={<Index tasks={tasks} createTasks={createTasks} />}/>
-        <Route path='/tasks/:id' element={<Show tasks={tasks} />}/>
+        <Route 
+          path='/tasks/:id' 
+          element={
+            <Show 
+              tasks={tasks}
+              updateTasks={updateTasks}
+              deleteTasks={deleteTasks}
+            />
+          }
+        />
       </Routes>
     </main>
   )

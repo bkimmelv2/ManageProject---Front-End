@@ -43,17 +43,20 @@ const Index = (props) => {
           // create a section for each status
           <div key={status}>
             <h2>{status}:</h2>
-            {groupedTasks[status].map(task => (
-              // create a div for each task
-              <div key={task._id}>
-                <Link to={`/tasks/${task._id}`}>
-                  <h1>{task.title}</h1>
-                </Link>
-                <h2>{task.description}</h2>
-                <h2>{task.dateCreated}</h2>
-                <h2>{task.dateDue}</h2>
-              </div>
-            ))} <br/>
+              {groupedTasks[status] && groupedTasks[status].length > 0 ? (
+                groupedTasks[status].map(task => (
+                  // create a div for each task
+                  <div key={task._id}>
+                    <Link to={`/tasks/${task._id}`}>
+                      <h1>{task.title}</h1>
+                    </Link>
+                      {/* <h2>{task.description}</h2>
+                      <h2>{task.dateCreated}</h2>
+                      <h2>{task.dateDue}</h2> */}
+                  </div>
+                ))
+              ) : (<p>No current tasks</p>)
+              } <br/>
           </div>
         ))}
       </div>
@@ -95,35 +98,38 @@ const Index = (props) => {
             name='title'
             placeholder='Task'
             onChange={handleChange}
-          /> <p>Required</p>
+          /> <p>'Task' Required</p>
           <input
             type='text'
             value={newForm.description}
             name='description'
             placeholder='Description'
             onChange={handleChange}
-          /> <p>Optional</p>
+          /> <p>'Description' Optional</p>
           <input
             type='text'
             value={newForm.dateCreated}
             name='dateCreated'
             placeholder='Date Created'
             onChange={handleChange}
-          /> <p>Required (MM-DD-YYYY)</p>
+          /> <p>'Date Created' Required</p>
           <input
             type='text'
             value={newForm.dateDue}
             name='dateDue'
             placeholder='Date Due'
             onChange={handleChange}
-          /> <p>Required (MM-DD-YYYY)</p>
-          <input
-            type='text'
+          /> <p>'Date Due' Required</p>
+          <select
             value={newForm.status}
             name='status'
-            placeholder='Status'
             onChange={handleChange}
-          /> <p>Required ('To Do', 'Doing', 'Done')</p>
+          >
+            <option value='' disabled>Select status</option>
+            <option value='To Do'>To Do</option>
+            <option value='Doing'>Doing</option>
+            <option value='Done'>Done</option>
+          </select> <p>'Status' Required</p>
           <input type ='Submit' value='Create Task' />
         </form> <br/>
 

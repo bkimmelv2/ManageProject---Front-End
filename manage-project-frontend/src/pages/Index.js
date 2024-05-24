@@ -1,4 +1,4 @@
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Index = (props) => {
 
@@ -33,9 +33,9 @@ const Index = (props) => {
                 ))
               ) : (<p>No current tasks</p>)
               } <br/>
-              <Link to={`/create/${status.toLowerCase()}`}>
-                <button>Create New Task</button>
-              </Link>
+            <Link to={`/create/${status.toLowerCase()}`}>
+              <button>Create New Task</button>
+            </Link>
             <br/> <br/>
           </div>
         ))}

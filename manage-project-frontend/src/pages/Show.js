@@ -1,4 +1,4 @@
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { useNavigate, useParams } from 'react-router-dom'
 
 const Show = (props) => {
@@ -6,6 +6,9 @@ const Show = (props) => {
   const navigate = useNavigate()
   const task = props.tasks?.find((p) => p._id === params.id)
 
+  if (!task) {
+    return <div>Loading...</div>
+  }
 
   const handleDelete = () => {
     props.deleteTasks(params.id)
@@ -24,7 +27,7 @@ const Show = (props) => {
       <Link to={`/tasks/${task._id}/edit`}>
         <button>Edit</button>
       </Link>
-      <br/><br/>
+      <br/> <br/>
 
       <button onClick={handleDelete}>
         Delete

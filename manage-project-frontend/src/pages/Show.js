@@ -15,7 +15,7 @@ const Show = (props) => {
   return (
     <div>
       <h1>{task.title}</h1>
-      <h2>{task.description}</h2>
+      <h2>Description: {task.description}</h2>
       <h2>Date created: {task.dateCreated}</h2>
       <h2>Date due: {task.dateDue}</h2>
       <h2>Status: {task.status}</h2>

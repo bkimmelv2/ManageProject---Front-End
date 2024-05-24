@@ -73,7 +73,7 @@ const Edit = (props) => {
             <option value='Doing'>Doing</option>
             <option value='Done'>Done</option>
           </select> <p>Required</p>
-          <input type="Submit" value="Update Task" />
+          <input type="Submit" value="Update" />
         </form>
       </div>
     )

@@ -22,12 +22,12 @@ const Show = (props) => {
       <br/>
 
       <Link to={`/tasks/${task._id}/edit`}>
-        <button>Edit Task</button>
+        <button>Edit</button>
       </Link>
       <br/><br/>
 
       <button onClick={handleDelete}>
-        Delete Task
+        Delete
       </button> 
 
     </div>

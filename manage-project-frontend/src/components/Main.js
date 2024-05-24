@@ -1,7 +1,9 @@
-import {useEffect, useState} from 'react';
-import {Routes, Route} from 'react-router-dom';
-import Index from '../pages/Index';
-import Show from '../pages/Show';
+import {useEffect, useState} from 'react'
+import {Routes, Route} from 'react-router-dom'
+import Index from '../pages/Index'
+import Show from '../pages/Show'
+import Create from '../pages/Create'
+import Edit from '../pages/Edit'
 
 const URL = "http://localhost:4000"
 
@@ -55,16 +57,21 @@ const Main = (props) => {
   return (
     <main>
       <Routes>
-        <Route path='/' element={<Index tasks={tasks} createTasks={createTasks} />}/>
+        <Route 
+          path='/' 
+          element={<Index tasks={tasks} createTasks={createTasks} /> }
+        />
         <Route 
           path='/tasks/:id' 
-          element={
-            <Show 
-              tasks={tasks}
-              updateTasks={updateTasks}
-              deleteTasks={deleteTasks}
-            />
-          }
+          element={<Show tasks={tasks} deleteTasks={deleteTasks} /> }
+        />
+        <Route
+          path='/tasks/:id/edit'
+          element={<Edit tasks={tasks} updateTasks={updateTasks} /> }
+        />
+        <Route 
+          path='/create/:status' 
+          element={<Create createTasks={createTasks} /> } 
         />
       </Routes>
     </main>

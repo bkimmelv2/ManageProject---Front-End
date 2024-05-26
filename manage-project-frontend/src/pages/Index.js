@@ -5,9 +5,9 @@ const Index = (props) => {
   // function to group tasks by their status
   const loaded = () => {
     // group tasks using reduce
-    const groupedTasks = props.tasks.reduce((groups, task) => {
+    const groupedTasks = props.tasks.reduce((groups, task) => {    //groups is acc (accumulator) & task is curr (current)
       // if the group for the current task's status doesn't exist, create it
-      if (!groups[task.status]) {
+      if (!groups[task.status]) {     //Here, groups is an array of objects. The objects are tasks and with 'status' as one of the keys shown in the schema.
         groups[task.status] = []
       }
       // add the current task to its group
@@ -17,24 +17,24 @@ const Index = (props) => {
 
     return (
       // render tasks and group them by status
-      <div>
+      <div className='taskContainer'>
         {['To Do', 'Doing', 'Done'].map(status => (
           // create a section for each status
-          <div key={status}>
-            <h2>{status}:</h2>
+          <div key={status} className='status' style={{ height: '500px', overflow: 'scroll', backgroundColor: 'rgb(201, 201, 201)', borderRadius: '30px'}}>
+            <h2 className='statusTitle'>{status}</h2>
               {groupedTasks[status] && groupedTasks[status].length > 0 ? (
                 groupedTasks[status].map(task => (
                   // create a div for each task
-                  <div key={task._id}>
+                  <div key={task._id} className='tasks'>
                     <Link to={`/tasks/${task._id}`}>
-                      <h1>{task.title}</h1>
+                      <h1 className='taskTitle'>{task.title}</h1>
                     </Link>
                   </div>
                 ))
               ) : (<p>No current tasks</p>)
               } <br/>
             <Link to={`/create/${status.toLowerCase()}`}>
-              <button>Create New Task</button>
+              <button className='create-Button'>Create New Task</button>
             </Link>
             <br/> <br/>
           </div>

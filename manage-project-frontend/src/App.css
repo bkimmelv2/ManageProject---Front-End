@@ -1,38 +1,78 @@
 .App {
-  text-align: center;
+  background-color: rgb(255, 207, 117);
+  width: 100vw;   
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav {
+  background-color: rgb(255, 207, 117);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Title {
+  text-align: Left;
+  color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.userContainer {
+  background-color: rgb(117, 208, 224); 
+  margin: 10px 70px 10px 70px; 
+  padding: 5px 15px 5px 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.taskContainer {
+  /* background-color: rgb(201, 201, 201); */
+  display:grid;
+  grid-auto-columns: 1fr;
+  grid-template-rows: 450px 450px 450px;
+  grid-template-columns: repeat(3, 1fr);
+  padding:30px 0 10px 0;
+  grid-column-gap: 40px;
+  margin:5px 70px 10px 70px;  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.status-1 {
+  background-color: rgb(201, 201, 201);
+  border-radius: 20px;
+  height: 520px; 
+}
+
+.status-2 {
+  background-color: rgb(201, 201, 201);
+  border-radius: 20px;
+  height: 250px; 
+}
+
+.status-3 {
+  background-color: rgb(201, 201, 201);
+  border-radius: 20px;
+  height: 1200px; 
+}
+
+
+.statusTitle {
+  text-align: center;  
+}
+
+.tasks{
+  background-color: rgb(92, 18, 18);
+  display:grid; 
+  grid-template-rows: 70px;
+  margin: 17px;
+  /* grid-row-gap: 15px; */
+  border-radius: 20px;
+  
+
+}
+
+.taskTitle {
+  color:white;
+  font-size: 17px;
+  padding: 5px 10px 10px 20px;  
+}
+
+.create-Button {
+  font-size: 18px;
+  background-color: rgb(204, 203, 203);
+  border-radius: 10px;
+  margin: 20px;
+  
 }

@@ -26,7 +26,7 @@ const Index = (props) => {
                 groupedTasks[status].map(task => (
                   // create a div for each task
                   <div key={task._id} className='tasks'>
-                    <Link to={`/tasks/${task._id}`}>
+                    <Link to={`/tasks/${task._id}`} style={{ textDecoration: 'none' }} >
                       <h1 className='taskTitle'>{task.title}</h1>
                     </Link>
                   </div>

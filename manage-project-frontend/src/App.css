@@ -7,13 +7,14 @@
 
 .nav {
   background-color: rgb(255, 207, 117);
-  margin: 10px 70px 10px 70px;
+  margin: 10px 70px 0 70px;
 }
 
 .Title {
   text-align: Left;
   color: rgb(119, 117, 117);
   display:flex;  
+  margin: 0 0 15px -50px;
 }
 
 .Logo {
@@ -23,6 +24,7 @@
   background-color: rgb(117, 208, 224); 
   /* margin: 10px 70px 10px 70px;  */
   padding: 5px 15px 5px 15px;
+  font-size: 12px;
 }
 
 .taskContainer {  
@@ -30,9 +32,9 @@
   grid-auto-columns: 1fr;
   grid-template-rows: 450px 450px 450px;
   grid-template-columns: repeat(3, 1fr);
-  padding:30px 0 10px 0;
+  padding:0 0 5px 0;
   grid-column-gap: 40px;
-  margin:5px 70px 10px 70px;  
+  margin:10px 70px 0 70px;  
 }
 
 
@@ -50,8 +52,9 @@
 
 .taskTitle {
   color:white;
-  font-size: 17px;
-  padding: 5px 10px 10px 20px;  
+  font-size: 15px;
+  padding: 5px 10px 10px 20px;
+ 
 }
 
 .create-Button {
@@ -64,33 +67,64 @@
 
 .Show {
   display:grid;
-  padding:30px 0 10px 0;
-  grid-column-gap: 40px;
-  margin:5px 70px 10px 70px; 
+  grid-auto-columns:1fr;  
+  padding:30px 0 10px 0;  
+  margin:0 70px 10px 70px; 
 }
 
 .ShowTitle {
   background-color: brown;
   padding: 20px;
-  width: 200px;
+  width: 700px;
   border-radius: 10px;
   color:white;
+  margin: 0 10px 0 0;
+  grid-column-start:1;
+  grid-column-end:2;
 }
 
 .ShowDescription{
-  background-color:rgb(201, 201, 201);
-  width: 500px;
-  height: 500px;
+  background-color:whitesmoke;
+  width: 700px;
+  height: 280px;
+  border-radius: 10px;
+  overflow: scroll;
+  padding: 20px;
+  grid-column-start:1;
+  grid-column-end:2; 
+  font-size: 18px; 
 }
 
-.DatesStatus{
-
+.DatesStatus{  
+  background-color: rgb(201, 201, 201);
+  width: 300px;
+  padding: 5px;  
+  grid-column-start:1;
+  grid-column-end:2;
+  margin: 5px 0 10px 0;
+  font-size: 20px;
 }
 
 .Edit{
-
+  display:grid;  
+  width: 80px;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight:600;
+  padding:5px;
+  border-radius: 10px;
+  position: absolute;
+  margin-top: -150px;
+  margin-left: 660px;
 }
 
-.Delete{
-
+.Delete{  
+  width: 100px;
+  font-size: 17px;
+  font-weight:600;
+  padding:5px;
+  border-radius: 10px;
+  position: absolute;
+  margin-top: 525px;
+  margin-left: 640px;
 }

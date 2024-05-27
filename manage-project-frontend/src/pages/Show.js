@@ -24,7 +24,7 @@ const Show = (props) => {
       <h2 className='DatesStatus'>Status: {task.status}</h2>
       <br/>
 
-      <Link to={`/tasks/${task._id}/edit`}>
+      <Link to={`/tasks/${task._id}/edit`} style={{ textDecoration: 'none' }}>
         <button className='Edit'>Edit</button>
       </Link>
       <br/> <br/>

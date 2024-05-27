@@ -5,21 +5,21 @@ import Show from '../pages/Show'
 import Create from '../pages/Create'
 import Edit from '../pages/Edit'
 
-const URL = "http://localhost:4000"
+// const URL = "http://localhost:4000"
 
 const Main = (props) => {
   const [tasks, setTasks] = useState(null)
 
   // get tasks from backend
   const getTasks = async () => {
-    const response = await fetch(URL + '/tasks')
+    const response = await fetch(process.env.REACT_APP_BACKEND_URL + '/tasks')
     const data = await response.json()
     setTasks(data)
   }
 
   // create tasks
   const createTasks = async (task) => {
-    const response = await fetch(URL + '/tasks' , {
+    const response = await fetch(process.env.REACT_APP_BACKEND_URL + '/tasks' , {
       method: "post",
       headers: {
         "Content-Type": "application/json"
@@ -32,7 +32,7 @@ const Main = (props) => {
 
   // update tasks
   const updateTasks = async (task, id) => {
-    await fetch(URL + `/tasks/${id}` , {
+    await fetch(process.env.REACT_APP_BACKEND_URL + `/tasks/${id}` , {
       method: "put",
       headers: {
         "Content-Type": "application/json"
@@ -44,7 +44,7 @@ const Main = (props) => {
 
   // delete tasks
   const deleteTasks = async (id) => {
-    await fetch(URL + `/tasks/${id}` , {
+    await fetch(process.env.REACT_APP_BACKEND_URL + `/tasks/${id}` , {
       method: "delete",
     })
     getTasks()

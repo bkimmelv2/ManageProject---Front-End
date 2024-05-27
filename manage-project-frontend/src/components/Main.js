@@ -10,6 +10,23 @@ import Edit from '../pages/Edit'
 const Main = (props) => {
   const [tasks, setTasks] = useState(null)
 
+  //Authentication
+  const [isAuthenticated, setIsAuthenticated] = useState(
+    () => JSON.parse(localStorage.getItem('auth')) || false
+  );
+
+  const setAuth = (value) => {
+    setIsAuthenticated(value);
+    
+  };
+
+  useEffect(()=>{
+    localStorage.setItem("auth", JSON.stringify(isAuthenticated));
+  }, [isAuthenticated]);
+
+
+
+
   // get tasks from backend
   const getTasks = async () => {
     const response = await fetch(process.env.REACT_APP_BACKEND_URL + '/tasks')

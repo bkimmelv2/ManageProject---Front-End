@@ -9,11 +9,7 @@ const Header = (props) => {
         <h1>Manage Project</h1>
         
       </Link>
-      <div className='userContainer'>
-        <h2>User-Name</h2>
-        <h2>User-Picture</h2>
-      </div>
-      
+            
     </div>
   )
 }

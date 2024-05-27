@@ -1,4 +1,4 @@
-# MangeProject App
+# ManageProject App
 
 <h3>Description</h3>
 
@@ -13,10 +13,9 @@ Users will need to signup and login if they need to access the app.
 
  <h2> ManageProject---Front-End </h2></br>
  <h3>Wireframes</h3>
- - Please see the wireframe for the Create Account/Login page below: </br></br>
- 
- ![image](https://github.com/davedawita/ManageProject---Front-End/assets/155693018/f15c11f4-e15f-4638-b065-70c26cc1c02f)
+ - Please see the wireframe for the Create Account/Login page below: </br></br> 
 
+![image](https://github.com/davedawita/ManageProject---Front-End/assets/155693018/e5ae9793-1608-47ab-afcf-24db53e466f7)
 
 
  - Please see the wireframe for the index page below: </br></br>

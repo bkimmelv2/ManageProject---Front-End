@@ -1,38 +1,173 @@
 .App {
-  text-align: center;
+  background-color: rgb(255, 207, 117);
+  width: 100vw;
+  height: 100vh;  
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav {
+  background-color: rgb(255, 207, 117);
+  margin: 10px 70px 0 70px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Title {
+  text-align: Left;
+  color: rgb(119, 117, 117);
+  display:flex;  
+  margin: 0 0 15px -50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Logo {
+  width:100px;
+}
+.userContainer {
+  background-color: rgb(117, 208, 224); 
+  /* margin: 10px 70px 10px 70px;  */
+  padding: 5px 15px 5px 15px;
+  font-size: 12px;
 }
 
-.App-link {
-  color: #61dafb;
+.taskContainer {  
+  display:grid;
+  grid-auto-columns: 1fr;
+  grid-template-rows: 450px 450px 450px;
+  grid-template-columns: repeat(3, 1fr);
+  padding:0 0 5px 0;
+  grid-column-gap: 40px;
+  margin:10px 70px 0 70px;  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.statusTitle {
+  text-align: center;  
+}
+
+.tasks{
+  background-color: rgb(92, 18, 18);
+  display:grid; 
+  grid-template-rows: 70px;
+  margin: 17px;
+  border-radius: 20px;  
+}
+
+.taskTitle {
+  color:white;
+  font-size: 15px;
+  padding: 5px 10px 10px 20px;
+ 
+}
+
+.create-Button {
+  font-size: 18px;
+  background-color: rgb(204, 203, 203);
+  border-radius: 10px;
+  margin: 20px;
+  
+}
+
+.Show {
+  display:grid;
+  grid-auto-columns:1fr;  
+  padding:30px 0 10px 0;  
+  margin:0 70px 10px 70px; 
+}
+
+.ShowTitle {
+  background-color: brown;
+  padding: 20px;
+  width: 700px;
+  border-radius: 10px;
+  color:white;
+  margin: 0 10px 0 0;
+  grid-column-start:1;
+  grid-column-end:2;
+}
+
+.ShowDescription{
+  background-color:whitesmoke;
+  width: 700px;
+  height: 280px;
+  border-radius: 10px;
+  overflow: scroll;
+  padding: 20px;
+  grid-column-start:1;
+  grid-column-end:2; 
+  font-size: 18px; 
+}
+
+.DatesStatus{  
+  background-color: rgb(201, 201, 201);
+  width: 300px;
+  padding: 5px;  
+  grid-column-start:1;
+  grid-column-end:2;
+  margin: 5px 0 10px 0;
+  font-size: 20px;
+}
+
+.Edit{
+  display:grid;  
+  width: 80px;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight:600;
+  padding:5px;
+  border-radius: 10px;
+  position: absolute;
+  margin-top: -150px;
+  margin-left: 660px;
+}
+
+.Delete{  
+  width: 100px;
+  font-size: 17px;
+  font-weight:600;
+  padding:5px;
+  border-radius: 10px;
+  position: absolute;
+  margin-top: 525px;
+  margin-left: 640px;
+}
+
+
+.EditTitle{
+  background-color: brown;
+  padding: 15px;
+  width: 700px;
+  border-radius: 10px;
+  color:white;
+  margin: 0 10px 0 70px;
+}
+
+.input{
+  font-size: 20px;
+  padding: 5px;    
+}
+
+.inputGap {
+  margin: 5px 0 5px 0;
+}
+
+.Form {
+  background-color: rgb(237, 241, 179);
+  margin: 20px 10px 0 70px;
+  padding: 20px;
+  width: 700px;
+  font-size: 20px;
+}
+
+.Btn {
+  width: 120px;
+  font-size: 17px;
+  font-weight:600;
+  padding:5px;
+  border-radius: 10px;
+  margin: 0 10px 0 70px;
+}
+
+.Desc {
+  width: 600px;
+  height: 170px;
+  font-size: 20px; 
+  margin: 5px 0 5px 0;
 }

@@ -47,7 +47,7 @@
   display:grid; 
   grid-template-rows: 70px;
   margin: 17px;
-  border-radius: 20px;
+  border-radius: 20px;  
 }
 
 .taskTitle {
@@ -127,4 +127,47 @@
   position: absolute;
   margin-top: 525px;
   margin-left: 640px;
+}
+
+
+.EditTitle{
+  background-color: brown;
+  padding: 15px;
+  width: 700px;
+  border-radius: 10px;
+  color:white;
+  margin: 0 10px 0 70px;
+}
+
+.input{
+  font-size: 20px;
+  padding: 5px;    
+}
+
+.inputGap {
+  margin: 5px 0 5px 0;
+}
+
+.Form {
+  background-color: rgb(237, 241, 179);
+  margin: 20px 10px 0 70px;
+  padding: 20px;
+  width: 700px;
+  font-size: 20px;
+}
+
+.Btn {
+  width: 120px;
+  font-size: 17px;
+  font-weight:600;
+  padding:5px;
+  border-radius: 10px;
+  margin: 0 10px 0 70px;
+}
+
+.Desc {
+  width: 600px;
+  height: 170px;
+  font-size: 20px; 
+  margin: 5px 0 5px 0;
 }

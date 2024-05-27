@@ -36,37 +36,37 @@ const Create = (props) => {
 
   return (
     <div>
-      <h2>Create a New Task</h2>
-      <form onSubmit={handleSubmit}>
-        <input
+      <h2 className='EditTitle' >Create a New Task</h2>
+      <form onSubmit={handleSubmit} className='Form' >
+        <input className='input'
           type='text'
           value={newForm.title}
           name='title'
           placeholder='Task'
           onChange={handleChange}
-        /> <p>'Task' Required</p>
-        <input
+        /> <p className='inputGap'>'Task' Required</p>
+        <input className='Desc'
           type='text'
           value={newForm.description}
           name='description'
           placeholder='Description'
           onChange={handleChange}
-        /> <p>'Description' Optional</p>
-        <input
+        /> <p className='inputGap'>'Description' Optional</p>
+        <input className='input'
           type='text'
           value={newForm.dateCreated}
           name='dateCreated'
           placeholder='Date Created'
           onChange={handleChange}
-        /> <p>'Date Created' Required</p>
-        <input
+        /> <p className='inputGap'>'Date Created' Required</p>
+        <input className='input'
           type='text'
           value={newForm.dateDue}
           name='dateDue'
           placeholder='Date Due'
           onChange={handleChange}
-        /> <p>'Date Due' Required</p>
-        <select
+        /> <p className='inputGap'>'Date Due' Required</p>
+        <select className='input'
           value={newForm.status}
           name='status'
           onChange={handleChange}
@@ -75,8 +75,8 @@ const Create = (props) => {
           <option value='To Do'>To Do</option>
           <option value='Doing'>Doing</option>
           <option value='Done'>Done</option>
-        </select> <p>'Status' Required</p>
-        <input type ='Submit' value='Create Task' />
+        </select> <p className='inputGap'>'Status' Required</p>
+        <input type ='Submit' value='Create Task' className='Btn' />
       </form> 
     </div>
   )

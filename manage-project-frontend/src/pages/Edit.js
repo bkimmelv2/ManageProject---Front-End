@@ -33,37 +33,37 @@ const Edit = (props) => {
 
   return (
     <div>
-      <h2>Edit Task</h2>
-        <form onSubmit={handleSubmit}>
-          <input
+      <h2 className='EditTitle'>Edit Task</h2>
+        <form onSubmit={handleSubmit} className='Form'>
+          <input className='input'
             type='text'
             value={updateForm.title}
             name='title'
             placeholder={task.title}
             onChange={handleChange}
-          /> <p>'Task' Required</p>
-          <input
+          /> <p className='inputGap'>'Task' Required</p>
+          <input className='Desc'
             type='text'
             value={updateForm.description}
             name='description'
             placeholder={task.description}
             onChange={handleChange}
-          /> <p>'Description' Optional</p>
-          <input
+          /> <p className='inputGap'>'Description' Optional</p>
+          <input className='input'
             type='text'
             value={updateForm.dateCreated}
             name='dateCreated'
             placeholder={task.dateCreated}
             onChange={handleChange}
-          /> <p>'Date Created' Required</p>
-          <input
+          /> <p className='inputGap'>'Date Created' Required</p>
+          <input className='input'
             type='text'
             value={updateForm.dateDue}
             name='dateDue'
             placeholder={task.dateDue}
             onChange={handleChange}
-          /> <p>'Date Due' Required</p>
-          <select
+          /> <p className='inputGap'>'Date Due' Required</p>
+          <select className='input'
             value={updateForm.status}
             name='status'
             onChange={handleChange}
@@ -72,8 +72,8 @@ const Edit = (props) => {
             <option value='To Do'>To Do</option>
             <option value='Doing'>Doing</option>
             <option value='Done'>Done</option>
-          </select> <p>Required</p>
-          <input type="Submit" value="Update" />
+          </select> <p className='inputGap'>Required</p>
+          <input type="Submit" value="Update" className='Btn'/>
         </form>
       </div>
     )

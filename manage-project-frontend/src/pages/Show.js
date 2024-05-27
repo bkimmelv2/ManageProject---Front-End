@@ -16,20 +16,20 @@ const Show = (props) => {
   }
 
   return (
-    <div>
-      <h1>{task.title}</h1>
-      <h2>Description: {task.description}</h2>
-      <h2>Date created: {task.dateCreated}</h2>
-      <h2>Date due: {task.dateDue}</h2>
-      <h2>Status: {task.status}</h2>
+    <div className='Show'>
+      <h1 className='ShowTitle'>{task.title}</h1>
+      <h2 className='ShowDescription'>Description: {task.description}</h2>
+      <h2 className='DatesStatus'>Date created: {task.dateCreated}</h2>
+      <h2 className='DatesStatus'>Date due: {task.dateDue}</h2>
+      <h2 className='DatesStatus'>Status: {task.status}</h2>
       <br/>
 
       <Link to={`/tasks/${task._id}/edit`}>
-        <button>Edit</button>
+        <button className='Edit'>Edit</button>
       </Link>
       <br/> <br/>
 
-      <button onClick={handleDelete}>
+      <button className='Delete' onClick={handleDelete}>
         Delete
       </button> 
 

@@ -1,25 +1,31 @@
 .App {
   background-color: rgb(255, 207, 117);
-  width: 100vw;   
+  width: 100vw;
+  height: 100vh;  
+  overflow: hidden;
 }
 
 .nav {
   background-color: rgb(255, 207, 117);
+  margin: 10px 70px 10px 70px;
 }
 
 .Title {
   text-align: Left;
-  color: black;
+  color: rgb(119, 117, 117);
+  display:flex;  
 }
 
+.Logo {
+  width:100px;
+}
 .userContainer {
   background-color: rgb(117, 208, 224); 
-  margin: 10px 70px 10px 70px; 
+  /* margin: 10px 70px 10px 70px;  */
   padding: 5px 15px 5px 15px;
 }
 
-.taskContainer {
-  /* background-color: rgb(201, 201, 201); */
+.taskContainer {  
   display:grid;
   grid-auto-columns: 1fr;
   grid-template-rows: 450px 450px 450px;
@@ -27,24 +33,6 @@
   padding:30px 0 10px 0;
   grid-column-gap: 40px;
   margin:5px 70px 10px 70px;  
-}
-
-.status-1 {
-  background-color: rgb(201, 201, 201);
-  border-radius: 20px;
-  height: 520px; 
-}
-
-.status-2 {
-  background-color: rgb(201, 201, 201);
-  border-radius: 20px;
-  height: 250px; 
-}
-
-.status-3 {
-  background-color: rgb(201, 201, 201);
-  border-radius: 20px;
-  height: 1200px; 
 }
 
 
@@ -57,10 +45,7 @@
   display:grid; 
   grid-template-rows: 70px;
   margin: 17px;
-  /* grid-row-gap: 15px; */
   border-radius: 20px;
-  
-
 }
 
 .taskTitle {
@@ -75,4 +60,37 @@
   border-radius: 10px;
   margin: 20px;
   
+}
+
+.Show {
+  display:grid;
+  padding:30px 0 10px 0;
+  grid-column-gap: 40px;
+  margin:5px 70px 10px 70px; 
+}
+
+.ShowTitle {
+  background-color: brown;
+  padding: 20px;
+  width: 200px;
+  border-radius: 10px;
+  color:white;
+}
+
+.ShowDescription{
+  background-color:rgb(201, 201, 201);
+  width: 500px;
+  height: 500px;
+}
+
+.DatesStatus{
+
+}
+
+.Edit{
+
+}
+
+.Delete{
+
 }

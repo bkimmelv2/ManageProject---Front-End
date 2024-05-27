@@ -13,8 +13,8 @@ Users will need to signup and login if they need to access the app.
 
  <h2> ManageProject---Front-End </h2></br>
  <h3>Wireframes</h3>
- - Please see the wireframe for the Create Account/Login page below: </br></br>
- 
+ - Please see the wireframe for the Create Account/Login page below: </br></br> 
+
 ![image](https://github.com/davedawita/ManageProject---Front-End/assets/155693018/e5ae9793-1608-47ab-afcf-24db53e466f7)
 
 

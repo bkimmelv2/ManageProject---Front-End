@@ -1,4 +1,4 @@
-# MangeProject App
+# ManageProject App
 
 <h3>Description</h3>
 

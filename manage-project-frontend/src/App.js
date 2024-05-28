@@ -106,7 +106,8 @@ function App() {
     <div className="App">
       <div>
         {toggleLogout ?
-          <button onClick={handleLogout} class='logoutBtn'>Logout</button> :      //If toggleLogout, continue using handleToggleLogout, If not handleLogin & handleCreate User will be applicable as shown in the div below:
+          <button onClick={handleLogout} class='logoutBtn'>Logout</button> 
+          :      //If toggleLogout, continue using handleToggleLogout, If not handleLogin & handleCreate User will be applicable as shown in the div below:
           <div class='appFormDiv'>
             {toggleLogin ?
               //login form
@@ -144,6 +145,7 @@ function App() {
             <button onClick={handleToggleForm} class='accountBtn'>{toggleLogin ? 'Need an account?' : 'Already have an account?'}</button>
           </div>
         }
+        
 
       </div>
       

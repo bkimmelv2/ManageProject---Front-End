@@ -187,8 +187,73 @@
   font-weight:600;  
 }
 
+.logoutBtn:hover {
+  filter: drop-shadow(0 2px 2px white);
+}
+
 .Title{
   font-size: 20px;
   
 }
 
+.accountBtn {
+  margin: 2em;
+  padding: 1em;
+  background-color: rgba(20, 97, 197, 0.637);
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  filter: drop-shadow(0 2px 2px grey);
+  color: white;
+  font-weight: 800;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.submitBtn {
+  margin: 2em;
+  padding: 10px;
+  background-color: rgba(131, 16, 45, 0.788);
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  filter: drop-shadow(0 2px 2px grey);
+  color: white;
+  font-weight: 800;
+  font-size: 22px;
+  cursor: pointer;
+}
+.errorMsg {
+  color: darkred;
+}
+
+.appFormDiv {
+  width: 700px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  padding: 2em 2em 6em 2em;
+  margin: 2em auto;
+  background-color:rgb(173, 230, 181);
+  filter: drop-shadow(0 2px 2px darkgrey);
+}
+
+.inputForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.formTitle {
+  margin: 0 auto 1em auto;
+  text-align: center;
+}
+
+.textInput {
+  padding: .75em;
+  font-size: 1.25em;
+  margin: .25em;
+  border-radius: .25em;
+  border-color: rgba(70, 70, 70, .5);
+  outline: none;
+  filter: drop-shadow(0 1px 1px grey);
+  color: darkgrey;
+}

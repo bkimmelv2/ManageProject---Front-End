@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import logo from '../Logo.jpg'
+import logo from '../Logo1.jpg'
 
 const Header = (props) => {
   return (

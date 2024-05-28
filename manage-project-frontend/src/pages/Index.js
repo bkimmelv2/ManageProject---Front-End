@@ -20,7 +20,7 @@ const Index = (props) => {
       <div className='taskContainer'>
         {['To Do', 'Doing', 'Done'].map(status => (
           // create a section for each status
-          <div key={status} className='status' style={{ height: '600px', overflow: 'scroll', backgroundColor: 'rgb(201, 201, 201)', borderRadius: '30px'}}>
+          <div key={status} className='status' style={{ height: '600px', overflow: 'scroll', backgroundColor: 'rgb(88, 83, 83)', borderRadius: '30px'}}>
             <h2 className='statusTitle'>{status}</h2>
               {groupedTasks[status] && groupedTasks[status].length > 0 ? (
                 groupedTasks[status].map(task => (

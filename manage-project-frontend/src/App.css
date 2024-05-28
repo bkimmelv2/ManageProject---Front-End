@@ -1,5 +1,5 @@
 .App {
-  background-color: rgb(255, 207, 117);
+  background-color: rgb(216, 157, 48);
   width: 100vw;
   height: 100vh;  
   overflow: hidden;
@@ -12,13 +12,15 @@
 
 .Title {
   text-align: Left;
-  color: rgb(119, 117, 117);
+  color: rgb(87, 87, 87);
   display:flex;  
-  margin: 0 0 15px -50px;
+  margin: 0 0 15px -40px;
+  text-decoration:none;  
 }
 
 .Logo {
   width:100px;
+  height:100px;
 }
 .userContainer {
   background-color: rgb(117, 208, 224); 
@@ -40,6 +42,7 @@
 
 .statusTitle {
   text-align: center;  
+  color: white
 }
 
 .tasks{
@@ -171,3 +174,21 @@
   font-size: 20px; 
   margin: 5px 0 5px 0;
 }
+
+.logoutBtn{
+  width: 120px;
+  font-size: 17px;
+  font-weight:600;
+  padding:5px;
+  border-radius: 10px;    
+  margin: 10px 40px 0 1750px;
+  background-color: rgb(243, 9, 9);
+  color:white;
+  font-weight:600;  
+}
+
+.Title{
+  font-size: 20px;
+  
+}
+

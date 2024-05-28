@@ -112,7 +112,7 @@ function App() {
               //login form
               <div className="formContainer">
                 <h1 class='formTitle'>Login</h1>
-                <form onSubmit={handleLogin} class='inputForm'>
+                <form onSubmit={handleLogin} className='inputForm'>
                   <input type='text' placeholder='username' class='textInput' onChange={(event)=> {setUsername(event.target.value)}}/>
                   <input type='password' placeholder='password' class='textInput' onChange={(event)=> {setPassword(event.target.value)}}/>
                   {toggleError ?

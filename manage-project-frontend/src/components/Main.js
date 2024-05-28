@@ -11,18 +11,18 @@ const Main = (props) => {
   const [tasks, setTasks] = useState(null)
 
   //Authentication
-  const [isAuthenticated, setIsAuthenticated] = useState(
-    () => JSON.parse(localStorage.getItem('auth')) || false
-  );
+  // const [isAuthenticated, setIsAuthenticated] = useState(
+  //   () => JSON.parse(localStorage.getItem('auth')) || false
+  // );
 
-  const setAuth = (value) => {
-    setIsAuthenticated(value);
+  // const setAuth = (value) => {
+  //   setIsAuthenticated(value);
     
-  };
+  // };
 
-  useEffect(()=>{
-    localStorage.setItem("auth", JSON.stringify(isAuthenticated));
-  }, [isAuthenticated]);
+  // useEffect(()=>{
+  //   localStorage.setItem("auth", JSON.stringify(isAuthenticated));
+  // }, [isAuthenticated]);
 
 
 

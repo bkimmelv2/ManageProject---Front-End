@@ -36,7 +36,7 @@ function App() {
     setPassword('')     //FOR CREATE ACCOUNT PAGE, initial value of password is empty.
     setUserPhoto('')    //FOR CREATE ACCOUNT PAGE, initial value of userphoto is empty.
 
-    axios.post('http://localhost:4000/createaccount', userObj).then((response) => {       //Create new username & password and request back-end to store created username & password
+    axios.post(process.env.REACT_APP_BACKEND_URL + '/createaccount', userObj).then((response) => {       //Create new username & password and request back-end to store created username & password
       if(response.data.username){
         console.log(response);
         setToggleError(false)
@@ -60,7 +60,7 @@ function App() {
     setUsername('')       //FOR LOG-IN PAGE: Initial value of user name is empty.
     setPassword('')       //FOR LOG-IN PAGE: Initial value of password is empty.
 
-    axios.put('http://localhost:4000/login', userObj).then((response) => {        //Request backend for data to log-in. 
+    axios.put(process.env.REACT_APP_BACKEND_URL+'/login', userObj).then((response) => {        //Request backend for data to log-in. 
       if(response.data.username){
         console.log(response);
         setToggleError(false)

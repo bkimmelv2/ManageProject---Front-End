@@ -45,6 +45,10 @@ Users will need to signup and login if they need to access the app.
  - As a user, I want to be able to edit the details of any task, so that I can update its information or move it to a different list as needed.</br>
  - As a user, I want to be able to delete a task, so that if it is no longer necessary it will no longer appear in the list.</br>
  - As a user, I want to be able to log out of my account, so that I can ensure the security of my information and prevent others from using my account.
+
+The folder structure includes components: Header & main & pages: Create, Edit, Index, & Show.</br>
+The App is basically codded in App.js and all user log-in/createaccount code is in App.js.</br>
+
 <h2>ManageProject ---Back-End</h2>
 
 <h3>MODELS:</h3> 
@@ -68,11 +72,10 @@ const taskSchema = new mongoose.Schema({</br>
 <h3>ROUTES:</h3>
 The following list of routes are included:</br>
 
-![image](https://github.com/davedawita/ManageProject---Front-End/assets/155693018/a6f4d551-7991-48c1-8436-1f5016d8814d)
+![image](https://github.com/davedawita/ManageProject---Front-End/assets/155693018/d19eac79-0bde-42a4-a446-b2401a0c2e51)
 
 
-<h2>To Be Edited</h2>
-<h4>In controllers/tasks.js:</h4> </br></br>
+<h4>In controllers/tasks.js:</h4> </br>
 
 GET/Tasks allows users to see the main project board with all tasks.</br>
 POST/Tasks allows users to add a task to the project board.</br>
@@ -80,12 +83,12 @@ PUT/Tasks/:id allows users to update the specific task's details</br>
 DELETE/Tasks/:id allows users to delete tasks</br>
 
 
-<h4>In controllers/users.js:</h4> </br></br>
-GET/tasks/login allows users to login</br>
-POST/tasks allows users to have user name and password</br>
-DELETE/tasks/logout allows users to logout</br></br>
+<h4>In controllers/users.js:</h4> </br>
+PUT/login allows users to login. </br>
+POST/createaccount allows users to have user name and password</br>
 
-We will also include components: Header & main.
+handleLogout() function on the front-end allows users to logout</br></br>
+
 
 <h2>Installation Instructions</h2>
  - Please use the link below to install the app. Enjoy the app!   </br>
@@ -93,7 +96,7 @@ We will also include components: Header & main.
  
  - If you are on a browser, use of Google chrome is highly recommended.    </br>
 <h2>Technologies used</h2>
-REACT, Javascript, Node.js, CSS, ejs, Express, MongoDB, Mongoose, Postman, and Figma(Only for wireframes without Dev Mode)   </br>
+REACT, Javascript, Node.js, CSS, ejs, Express, MongoDB, Mongoose, Postman, and Figma(Only for wireframes without Dev Mode). We can also say that we use MERN (Mongodb, Express, React, Node.js) stack.  </br>
 
 <h2>MVP Goals</h2>
 Full CRUD(Create, Read, Update, Delete) Functionality. </br>

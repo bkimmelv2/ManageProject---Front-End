@@ -96,9 +96,9 @@ handleLogout() function on the front-end allows users to logout</br></br>
 
 <h2>Installation Instructions</h2>
  - Please use the link below to install the app. Enjoy the app!   </br>
+ https://manage-project-app.netlify.app  </br></br> 
  
- 
- - If you are on a browser, use of Google chrome is highly recommended.    </br>
+If you are on a browser, use of Google chrome is highly recommended.    </br>
 <h2>Technologies used</h2>
 REACT, Javascript, Node.js, CSS, ejs, Express, MongoDB, Mongoose, Postman, and Figma(Only for wireframes without Dev Mode). We can also say that we use MERN (Mongodb, Express, React, Node.js) stack.  </br>
 

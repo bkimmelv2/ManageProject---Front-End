@@ -51,6 +51,10 @@ The App is basically codded in App.js and all user log-in/createaccount code is 
 
 <h2>ManageProject ---Back-End</h2>
 
+<h3>Back-end Repository</h3>
+The backend repo can be accessed through the link below:</br>
+https://github.com/davedawita/ManageProject---Back-End.git </br>
+
 <h3>MODELS:</h3> 
 The following models are included: </br></br>
 

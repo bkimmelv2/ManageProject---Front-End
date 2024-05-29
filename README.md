@@ -34,8 +34,7 @@ Users will need to signup and login if they need to access the app.
 
 **<h3>User Stories</h3>** 
  - As a user, I want to be able to sign up and create an account with a username and password, so that I have access to the app.</br>
- - As a user, I want to be able to log in with my username and password, so that I can use the app’s features and functionalities and ensure that anything I do within the app is saved to my account.</br>
- - As a user, I want my name to be displayed at the top of the web page, so that it provides a personalized and welcoming experience each time I access the app.</br>
+ - As a user, I want to be able to log in with my username and password, so that I can use the app’s features and functionalities and ensure that anything I do within the app is saved to my account.</br> 
  - As a user, I want to have a “board” for my project, so that I can see and manage my project.</br>
  - As a user, I want the board for my project to have three lists called “To Do,” “Doing,” and “Done,” so that I can keep track of what needs to get done, what I am in the process of doing, and what has 
    already gotten done.</br>
